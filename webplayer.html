@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="imagefolder/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebaar">
+            <div class="nav">
+                <div class="nav_option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav_option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <div class="library">
+                <div class="option">
+                    <div class="lib_option nav_option">
+                      <span class="itsme">Collapse Your Library</span>
+                        <img src="imagefolder/library_icon.png" alt="">
+                        <a href="#"> Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <span class="itsme_2">Create playlist or Folder</span>
+                        <i class="fa-solid fa-plus theplus"></i>
+
+                        <span class="itsme_3">show more</span>
+                        <i class="fa-solid fa-arrow-right shomore"></i>
+                    </div>
+
+                </div>
+
+                <div class="lib_box">
+                    <div class="box">
+                        <p class="box_one">Create Your first playlist</p>
+                        <p class="box_two">It's esay, we'll help you</p>
+                        <button class="badge">
+                            Create playlist
+                        </button>
+                    </div>
+                    <div class="box">
+                        <p class="box_one">Let's find some podcast to follow</p>
+                        <p class="box_two">we'll keep you updated on new espisode </p>
+                        <button class="badge">
+                            Browse podcasts
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second div start here -->
+ 
+  <div class="main_content">
+
+            <div class="sticky_nav">
+                <div class="nav_icons">
+                    <img src="imagefolder/backward_icon.png">
+                    <img src="imagefolder/forward_icon.png" class="hide">
+                </div>
+
+
+                <div class="nav_badge">
+                    <button class="badge item_nav Explore hover">
+                        Explore Primium
+                    </button>
+                    <button class="badge item_nav dark_badge hover">
+                        <i class="fa-regular fa-circle-down Install"></i>
+                        Install App
+                    </button>
+                    <span class="itsme_4">What's New</span>
+                    <i class="fa-regular fa-bell item_nav bell"></i>
+                    <span class="itsme_5">Praveen</span>
+                    <i class="fa-regular fa-user item_nav bell light"></i>
+                </div>
+            </div>
+
+
+<!-- card             -->
+            <div class="cards">
+              <h2>Recently played</h2>
+              <div class="card_container">
+                <div class="container">
+                    <img src="cardimage/one.jpeg" alt="" class="card_img">
+
+                    <div class="greenbutton">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    
+                    <p class="cardtile">Nallannaa Muru..</p>
+                    <p class="card_infiormation">spotify studiuo</p>
+                </div>
+                <div class="container">
+                    <img src="cardimage/one.jpeg" alt="" class="card_img">
+                    <p class="cardtile">Nallannaa Muru..</p>
+                    <p class="card_infiormation">spotify studiuo</p>
+                </div>
+              </div>
+
+
+              <h2>Recently played</h2>
+              <div class="card_container">
+                <div class="container">
+                    <img src="imagefolder/card1img.jpeg" alt="" class="card_img">
+                    <p class="cardtile">Nallannaa Muru..</p>
+                    <p class="card_infiormation">spotify studiuo</p>
+                </div>
+              </div>
+              <h2>Recently played</h2>
+              <div class="card_container">  
+                <div class="container">
+                    <img src="cardimage/one.jpeg" alt="" class="card_img">
+                    <p class="cardtile">Nallannaa Muru..</p>
+                    <p class="card_infiormation">spotify studiuo</p>
+                </div>
+              </div>
+              <h2>Recently played</h2>
+              <div class="card_container">
+                <div class="container">
+                    <img src="cardimage/one.jpeg" alt="" class="card_img">
+                    <p class="cardtile">Nallannaa Muru..</p>
+                    <p class="card_infiormation">spotify studiuo</p>
+                </div>
+              </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- musice player html start  -->
+        <div class="musice_player">
+            <div class="album">
+                <img src="Homework Assets/album_picture.jpeg" alt="">
+                <i class="fa-solid fa-caret-up"></i>
+                <div class="para">
+                    <a href="" class="first">Pacha Satta</a> <br>
+                    <a href="" class="second"> Nallanaa Murukku-The RJ  </a>
+                </div>
+                <span>
+                    <img src="Homework Assets/album_icon1.png" class="redheart" alt="">
+                </span> 
+            </div>
+
+
+
+            <div class="player">
+                <div class="player_control">
+                    <img src="imagefolder/player_icon1.png" class="player_control_icon">
+                    <img src="imagefolder/player_icon2.png" class="player_control_icon">
+                    <img src="imagefolder/player_icon3.png" class="player_control_icon" id="pause">
+                    <img src="imagefolder/player_icon4.png" class="player_control_icon">
+                    <img src="imagefolder/player_icon5.png" class="player_control_icon">
+                </div>
+                <div class="playback_bar">
+                    <span class="current_time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress_bar" step="1">
+                    <span class="total_time">3:33</span>
+                </div>
+            </div>
+
+
+
+            <div class="controls">
+                <div class="controls_item">
+                    <img src="Homework Assets/controls_icon1.png" class="little">
+                    <img src="Homework Assets/controls_icon3.png" alt="">
+                    <img src="Homework Assets/controld_icon2.png" class="little">
+                    <img src="Homework Assets/controls_icon5.png" class="little">
+                    <input type="range" class="progress_bar" min="0" max="100" step="1" style="width:40%;">
+                    <img src="/Homework Assets/controls_icon4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="web.js"></script>
+</body>
+
+</html>
