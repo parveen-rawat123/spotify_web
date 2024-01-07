@@ -36,4 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
   showHideElement(".shomore", ".itsme_3");
   showHideElement(".bell", ".itsme_4");
   showHideElement(".nav_badge .light", ".itsme_5");
+  showHideElement(".likesong img", ".like");
 });
