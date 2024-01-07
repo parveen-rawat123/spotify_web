@@ -171,7 +171,7 @@ a {
   opacity: 0.75;
 }
 
-.badge{
+.badge {
   background-color: white;
   border: none;
   height: 2rem;
@@ -181,7 +181,8 @@ a {
   font-weight: 700;
   margin-top: 0.5rem;
 }
-.badge:hover{
+
+.badge:hover {
   transform: scale(1.05);
 }
 
@@ -216,7 +217,7 @@ a {
   align-items: center;
   padding-right: 0.7rem;
   gap: 0.5rem;
-  
+
 }
 
 
@@ -284,6 +285,7 @@ a {
   margin-left: 0.5rem;
 
 }
+
 .album .fa-caret-up {
   font-size: 1.5rem;
   position: absolute;
@@ -301,9 +303,11 @@ a {
   height: 3rem;
   border-radius: 5px;
 }
-.album img:hover + .fa-caret-up {
-    opacity: 1;
+
+.album img:hover+.fa-caret-up {
+  opacity: 1;
 }
+
 .album img:hover {
   transform: scale(1.05);
 }
@@ -321,11 +325,13 @@ a {
 .likesong img {
   opacity: 0.8;
 }
-.likesong{
+
+.likesong {
   position: relative;
   height: 1.2rem;
 }
-.like{
+
+.like {
   position: absolute;
   font-size: 0.7rem;
   background-color: #232323;
@@ -345,6 +351,7 @@ a {
   opacity: 1;
   transform: scale(1.1);
 }
+
 /* musice palyer css */
 
 .musice_player {
@@ -423,6 +430,7 @@ a {
 }
 
 .controls_item {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -443,8 +451,33 @@ a {
   height: 1.9rem;
 }
 
-/* this is java script css  */
+.control {
+  position: absolute;
+  font-size: 0.7rem;
+  background-color: #232323;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2px 5px;
+  font-weight: 400;
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
 
+.queue {
+  left: 2.3rem;
+  top: -1.5rem;
+}
+
+.connectdevice {
+  top: -1.5rem;
+  right: 0rem;
+}
+.Muteicon {
+  top: -1.5rem;
+  left: 6rem;
+}
+
+/* this is java script css  */
 .itsme {
   position: absolute;
   color: white;
@@ -459,7 +492,8 @@ a {
   line-height: 1.5;
   display: none;
 }
-.itsme_2{
+
+.itsme_2 {
   position: absolute;
   color: white;
   top: 17%;
@@ -471,9 +505,10 @@ a {
   padding: 3px 9px;
   background-color: #232323;
   line-height: 1.5;
-  display: none; 
+  display: none;
 }
-.itsme_3{
+
+.itsme_3 {
   position: absolute;
   color: white;
   top: 17%;
@@ -485,9 +520,10 @@ a {
   padding: 3px 9px;
   background-color: #232323;
   line-height: 1.5;
-  display: none; 
+  display: none;
 }
-.itsme_4{
+
+.itsme_4 {
   position: absolute;
   top: 90%;
   right: 3%;
@@ -499,9 +535,10 @@ a {
   padding: 3px 9px;
   background-color: #232323;
   line-height: 1.5;
-  display: none; 
+  display: none;
 }
-.itsme_5{
+
+.itsme_5 {
   position: absolute;
   color: white;
   top: 90%;
@@ -513,15 +550,18 @@ a {
   padding: 3px 9px;
   background-color: #232323;
   line-height: 1.5;
-  display: none; 
+  display: none;
 }
 
-.cards{
+
+
+.cards {
   margin: 0.5rem 0 1.5rem;
 }
 
+
 /* card css */
-.container{
+.container {
   background-color: #23232342;
   width: 9.9rem;
   height: 13.5rem;
@@ -529,12 +569,13 @@ a {
   padding: 0.8rem;
   position: relative;
 }
-.container:hover{
-  background-color:#232323;
+
+.container:hover {
+  background-color: #232323;
 
 }
 
-.greenbutton{
+.greenbutton {
   background-color: #1bd760;
   height: 2.4rem;
   width: 2.4rem;
@@ -547,34 +588,40 @@ a {
   align-items: center;
   display: none;
 }
-.greenbutton:hover{
-  transform: scale(1.1);
-}  
 
-.greenbutton i{
- color: black;
+.greenbutton:hover {
+  transform: scale(1.1);
 }
-.card_container{
+
+.greenbutton i {
+  color: black;
+}
+
+.card_container {
   display: flex;
   align-items: center;
   gap: 1.1rem;
 }
-.card_img{
+
+.card_img {
   width: 100%;
   border-radius: 0.4rem;
 
- }
- .cardtile{
+}
+
+.cardtile {
   font-weight: 600;
   margin-top: 0.3rem;
-  
+
 }
-.card_infiormation{
+
+.card_infiormation {
   font-size: 0.8rem;
   opacity: 0.8;
   margin-top: 0.3rem;
-  
- }
- .cards h2{
+
+}
+
+.cards h2 {
   padding: 0.7rem 0;
- }
+}

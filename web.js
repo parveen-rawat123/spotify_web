@@ -1,20 +1,16 @@
 
-  // porfile js
+// porfile js
 document.addEventListener('DOMContentLoaded', () => {
-    const profile = document.querySelector(".nav_badge .light");
-    const myname = document.querySelector(".itsme_5");
-  
-    profile.addEventListener("mouseenter", () => {
-      myname.style.display = "block";
-    });
-    profile.addEventListener("mouseleave", () => {
-      myname.style.display = "none";
-      });
+  const profile = document.querySelector(".nav_badge .light");
+  const myname = document.querySelector(".itsme_5");
+
+  profile.addEventListener("mouseenter", () => {
+    myname.style.display = "block";
   });
-
-
-  
-
+  profile.addEventListener("mouseleave", () => {
+    myname.style.display = "none";
+  });
+});
 
 
 function showHideElement(triggerSelector, targetSelector) {
@@ -37,4 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   showHideElement(".bell", ".itsme_4");
   showHideElement(".nav_badge .light", ".itsme_5");
   showHideElement(".likesong img", ".like");
+  showHideElement(".main_queue",".queue");
+  showHideElement(".main_muteicon",".Muteicon");
+  showHideElement(".main_connectdice",".connectdevice");
 });
