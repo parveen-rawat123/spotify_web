@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family:'Segoe UI', Tahoma,  Verdana, sans-serif !important;
   background-color: black;
   color: white;
   overflow: hidden;
@@ -29,7 +29,7 @@ body {
 .main_content {
   background-color: #121212;
   flex: 1;
-  height: 27.45rem;
+  height: 34rem;
   border-radius: 0.5rem;
   overflow: auto;
   margin: 0.4rem 0.5rem 0 0;
@@ -335,7 +335,6 @@ a {
   position: absolute;
   font-size: 0.7rem;
   background-color: #232323;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 2px 5px;
   top: -28px;
   left: -1rem;
