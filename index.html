@@ -38,7 +38,6 @@
                     <div class="icons">
                         <span class="itsme_2">Create playlist or Folder</span>
                         <i class="fa-solid fa-plus theplus"></i>
-
                         <span class="itsme_3">show more</span>
                         <i class="fa-solid fa-arrow-right shomore"></i>
                     </div>
@@ -66,6 +65,7 @@
                     <button class="badge item_nav Explore hover">
                         Explore Primium
                     </button>
+                    
                     <button class="badge item_nav dark_badge hover">
                         <i class="fa-regular fa-circle-down Install"></i>
                         Install App
@@ -82,17 +82,12 @@
             <div class="cards">
                 <h2>Recently played</h2>
                 <div class="card_container">
-                    <div class="container">
+                    <div class="container" data-folder="punjabi">
                         <img src="cardimage/one.jpeg" alt="" class="card_img">
-
-                        <div class="greenbutton">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-
                         <p class="cardtile">Nallannaa Muru..</p>
                         <p class="card_infiormation">spotify studiuo</p>
                     </div>
-                    <div class="container">
+                    <div class="container" data-folder="english">
                         <img src="cardimage/one.jpeg" alt="" class="card_img">
                         <p class="cardtile">Nallannaa Muru..</p>
                         <p class="card_infiormation">spotify studiuo</p>
@@ -107,6 +102,7 @@
                         <p class="cardtile">Nallannaa Muru..</p>
                         <p class="card_infiormation">spotify studiuo</p>
                     </div>
+
                 </div>
                 <h2>Recently played</h2>
                 <div class="card_container">
@@ -132,19 +128,14 @@
 
     <!-- musice player html start  -->
     <div class="musice_player">
-
-        <div class="album">
-            <img src="Homework Assets/album_picture.jpeg" alt="">
-        </div>
-
         <div class="para">
-            <a href="" class="first">Pacha Satta</a> <br>
+            <a href="" class="first"></a> <br>
         </div>
 
         <div class="likesong">
             <span class="like">like song</span>
-            <img src="Homework Assets/album_icon1.png" class="redheart" alt="">
-        </div>
+              <i class="fa-solid fa-heart"></i>
+            </div>
 
 
 
@@ -180,7 +171,7 @@
                     <img src="Homework Assets/controls_icon5.png" class="little">
                 </div>
 
-                <input type="range" class="progress_bar" min="0" max="100" step="1" style="width:40%;">
+                <input type="range" class="progress_bar" name="volume" style="width:40%;">
 
                 <div class="main_connectdice">
                     <span class="control connectdevice">Connect to a divice</span>

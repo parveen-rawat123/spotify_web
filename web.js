@@ -30,11 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
   showHideElement(".shomore", ".itsme_3");
   showHideElement(".bell", ".itsme_4");
   showHideElement(".nav_badge .light", ".itsme_5");
-  showHideElement(".likesong img", ".like");
+  showHideElement(".likesong i", ".like");
   showHideElement(".main_queue", ".queue");
   showHideElement(".main_muteicon", ".Muteicon");
   showHideElement(".main_connectdice", ".connectdevice");
 });
+
+
 
 // music
 
@@ -91,9 +93,7 @@ async function main() {
       songUl.innerHTML +
       `<li>
                          <img  src="music.svg" alt="">
-                     <div class="info">
-                <div> ${song.replaceAll("%20", " ")}</div>
-                <div>hii</div>
+                     <div class="info"><div> ${song.replaceAll("%20", " ")}</div>
                       </div>
                         <div class="playbtn">
                             <span> Play Now</span>
@@ -159,5 +159,24 @@ async function main() {
       playmusice(songs[index + 1]);
     }
   });
+
+// addevent to volume
+document.querySelector(".progress_bar").addEventListener("change",(e)=>{
+   console.log(e)
+   currentsong.volume = parseInt(e.target.value)/100
+});
+
 }
 main();
+
+
+ //like song 
+ let likesong = document.querySelector(".likesong i ");
+ likesong.addEventListener("click",()=>{
+  if(likesong.style.color === "white"){
+    likesong.style.color = "red"
+  }
+  else{
+    likesong.style.color =  "white";
+  }
+ })
