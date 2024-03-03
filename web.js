@@ -59,9 +59,9 @@ let play = document.querySelector("#pause");
 
 
 async function getsongs() {
-  let a = await fetch("https://raw.githubusercontent.com/parveen-rawat123/spotify_web/main/songs/");
+  let a = await fetch("./songs");
   let responce = await a.text();
-  let div = document.createElement("div");
+  let div = document.createElement("div"); 
   div.innerHTML = responce;
   let as = div.getElementsByTagName("a");
   let songs = [];
