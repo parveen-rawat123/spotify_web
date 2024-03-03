@@ -59,7 +59,7 @@ let play = document.querySelector("#pause");
 
 
 async function getsongs() {
-  let a = await fetch("./songs/");
+  let a = await fetch("/songs/");
   let responce = await a.text();
   let div = document.createElement("div"); 
   div.innerHTML = responce;
