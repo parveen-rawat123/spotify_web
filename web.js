@@ -53,13 +53,12 @@ function secondToMinutesSeconds(seconds) {
   let secondsString = String(remainingSeconds).padStart(2, "0");
   return `${minutesString}:${secondsString}`;
 }
-//https://raw.githubusercontent.com/parveen-rawat123/spotify_web/main/songs/Aam%20Jahe%20Munde%20_%20Parmish%20Verma.mp3
 
 let play = document.querySelector("#pause");
 
 
 async function getsongs() {
-  let a = await fetch("songs/");
+  let a = await fetch("/songs");
   let responce = await a.text();
   let div = document.createElement("div"); 
   div.innerHTML = responce;
